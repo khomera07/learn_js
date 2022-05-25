@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ავტორიზაცია</title>
+    <link rel="stylesheet" href="./style/auth.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="auth-form-container">
+            <form action=""method="get">
+                <div class="form-group"> <!--ეს კლასი შეიქმნა იმისთვის რომ მომხმარებლის სახელი და პაროლი css-ში ერთმანეთს დავაშოროთ-->
+                    <label class="text-input-label" 
+                    for="userName">მომხმარებლის სახელი</label>
+                    <input class="text-input" type="text" name="userName" id="userName" 
+                    placeholder="შეიყვანეთ სახელი">
+                </div>
+                <div class="form-group">
+                    <label class="text-input-label" 
+                    for="pass">პაროლი</label>
+                    <input class="text-input" type="password" name="pass" id="pass"> 
+                </div>
+                <div class="form-grop">
+                    <input type="checkbox" id="save" name="save">
+                    <label for="save">დამახსოვრება</label>
+                </div>
+                <a class="btn btn-link mb-15" href="./reset.html">პაროლის აღდგენა</a>
+                <button class="btn btn-primary mb-15 w-100">შესვლა</button>
+                <a class="btn btn-link" href="./registration.html">რეგისტრაცია</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
